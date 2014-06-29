@@ -11,6 +11,10 @@ function yum() {
   $(type -P yum) --disablerepo=updates "${@}"
 }
 
+function yum-builddep() {
+  $(type -P yum-builddep) --disablerepo=updates "${@}"
+}
+
 # Add installation packages ...
 addpkgs="
  man ntp ntpdate
